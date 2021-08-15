@@ -1,0 +1,1108 @@
+{
+  "nobelPrizes":[
+    {
+      "awardYear":"2000",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2000-10-13",
+      "prizeAmount":9000000,
+      "prizeAmountAdjusted":11538617,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2000",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"725",
+          "knownName":{
+            "en":"Kim Dae-jung"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his work for democracy and human rights in South Korea and in East Asia in general, and for peace and reconciliation with North Korea in particular",
+            "no":"for hans arbeid for demokrati og fred i Sør-Korea og i Øst-Asia generelt og for fred og forsoning spesielt med Nord-Korea"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/725",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2001",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2001-10-12",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":12518033,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2001",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"748",
+          "orgName":{
+            "en":"United Nations",
+            "no":"De Forente Nasjoner (FN)"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their work for a better organized and more peaceful world",
+            "no":"for deres innsats for en bedre organisert og fredeligere verden"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/748",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"749",
+          "knownName":{
+            "en":"Kofi Annan"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their work for a better organized and more peaceful world",
+            "no":"for deres innsats for en bedre organisert og fredeligere verden"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/749",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2002",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2002-10-11",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":12252888,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2002",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"762",
+          "knownName":{
+            "en":"Jimmy Carter"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his decades of untiring effort to find peaceful solutions to international conflicts, to advance democracy and human rights, and to promote economic and social development",
+            "no":"for hans iherdige innsats gjennom flere tiår for fredelig løsning av internasjonale konflikter, for demokrati og menneskerettigheter og for økonomisk og sosial utvikling"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/762",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2003",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2003-10-10",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":12021411,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2003",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"773",
+          "knownName":{
+            "en":"Shirin Ebadi"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for her efforts for democracy and human rights. She has focused especially on the struggle for the rights of women and children",
+            "no":"for hennar innsats for demokrati og menneskerettar. Ho har særleg engasjert seg i kampen for rettane til kvinner og born"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/773",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2004",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2004-10-08",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11976161,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2004",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"783",
+          "knownName":{
+            "en":"Wangari Maathai"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for her contribution to sustainable development, democracy and peace",
+            "no":"for hennes innsats for en bærekraftig utvikling, demokrati og fred"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/783",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2005",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2005-10-07",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11923798,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2005",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"797",
+          "orgName":{
+            "en":"International Atomic Energy Agency",
+            "no":"Det internasjonale atomenergibyrået (IAEA)"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their efforts to prevent nuclear energy from being used for military purposes and to ensure that nuclear energy for peaceful purposes is used in the safest possible way",
+            "no":"for arbeidet deira for å hindra at kjernefysisk energi blir nytta til militære føremål og for at kjernefysisk energi til sivile føremål vert nytta på sikrast mogelege måte"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/797",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"798",
+          "knownName":{
+            "en":"Mohamed ElBaradei"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their efforts to prevent nuclear energy from being used for military purposes and to ensure that nuclear energy for peaceful purposes is used in the safest possible way",
+            "no":"for arbeidet deira for å hindra at kjernefysisk energi blir nytta til militære føremål og for at kjernefysisk energi til sivile føremål vert nytta på sikrast mogelege måte"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/798",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2006",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2006-10-13",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11762169,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2006",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"809",
+          "knownName":{
+            "en":"Muhammad Yunus"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their efforts to create economic and social development from below",
+            "no":"for arbeidet deira for å skapa økonomisk og sosial utvikling nedanfrå"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/809",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"810",
+          "orgName":{
+            "en":"Grameen Bank"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their efforts to create economic and social development from below",
+            "no":"for arbeidet deira for å skapa økonomisk og sosial utvikling nedanfrå"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/810",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2007",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2007-10-12",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11506932,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2007",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"818",
+          "orgName":{
+            "en":"Intergovernmental Panel on Climate Change",
+            "no":"FNs klimapanel (IPCC)"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change",
+            "no":"for deira innsats for å skape og spreie større kunnskap om menneskeskapte klimaendringar og for å leggje grunnlag for dei tiltaka som krevst for å motverke desse endringane"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/818",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"819",
+          "knownName":{
+            "en":"Al Gore"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change",
+            "no":"for deira innsats for å skape og spreie større kunnskap om menneskeskapte klimaendringar og for å leggje grunnlag for dei tiltaka som krevst for å motverke desse endringane"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/819",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2008",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2008-10-10",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11124709,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2008",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"833",
+          "knownName":{
+            "en":"Martti Ahtisaari"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his important efforts, on several continents and over more than three decades, to resolve international conflicts",
+            "no":"for den store innsatsen han har lagt ned på fleire kontinent og gjennom meir enn tre tiår for å løyse internasjonale konfliktar"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/833",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2009",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2009-10-09",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11157218,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2009",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"845",
+          "knownName":{
+            "en":"Barack H. Obama"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his extraordinary efforts to strengthen international diplomacy and cooperation between peoples",
+            "no":"for hans ekstraordinære innsats for å styrke internasjonalt diplomati og mellomfolkelig samarbeid"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/845",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2010",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2010-10-08",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":11015580,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2010",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"855",
+          "knownName":{
+            "en":"Liu Xiaobo"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his long and non-violent struggle for fundamental human rights in China",
+            "no":"for hans lange og ikke-voldelige kamp for sentrale menneskerettigheter i Kina"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/855",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2011",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2011-10-07",
+      "prizeAmount":10000000,
+      "prizeAmountAdjusted":10736783,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2011",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"869",
+          "knownName":{
+            "en":"Ellen Johnson Sirleaf"
+          },
+          "portion":"1/3",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their non-violent struggle for the safety of women and for womens rights to full participation in peace-building work",
+            "no":"for deres ikke-voldelige kamp for kvinners sikkerhet og deres rett til full deltakelse i fredsbyggende arbeid"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/869",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"870",
+          "knownName":{
+            "en":"Leymah Gbowee"
+          },
+          "portion":"1/3",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their non-violent struggle for the safety of women and for womens rights to full participation in peace-building work",
+            "no":"for deres ikke-voldelige kamp for kvinners sikkerhet og deres rett til full deltakelse i fredsbyggende arbeid"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/870",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"871",
+          "knownName":{
+            "en":"Tawakkol Karman"
+          },
+          "portion":"1/3",
+          "sortOrder":"3",
+          "motivation":{
+            "en":"for their non-violent struggle for the safety of women and for womens rights to full participation in peace-building work",
+            "no":"for deres ikke-voldelige kamp for kvinners sikkerhet og deres rett til full deltakelse i fredsbyggende arbeid"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/871",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2012",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2012-10-12",
+      "prizeAmount":8000000,
+      "prizeAmountAdjusted":8512821,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2012",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"881",
+          "orgName":{
+            "en":"European Union (EU)",
+            "no":"Den Europeiske Union (EU)"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for over six decades contributed to the advancement of peace and reconciliation, democracy and human rights in Europe",
+            "no":"for gjennom mer enn seks tiår bidratt til å fremme fred og forsoning, demokrati og menneskerettigheter i Europa"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/881",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2013",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2013-10-11",
+      "prizeAmount":8000000,
+      "prizeAmountAdjusted":8517568,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2013",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"893",
+          "orgName":{
+            "en":"Organisation for the Prohibition of Chemical Weapons",
+            "no":"Organisasjonen for forbud mot kjemiske våpen (OPCW)"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for its extensive efforts to eliminate chemical weapons",
+            "no":"for dens omfattende arbeid for å avskaffe kjemiske våpen"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/893",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2014",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2014-10-10",
+      "prizeAmount":8000000,
+      "prizeAmountAdjusted":8531844,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2014",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"913",
+          "knownName":{
+            "en":"Kailash Satyarthi"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their struggle against the suppression of children and young people and for the right of all children to education",
+            "no":"for deres kamp mot undertrykkelse av barn og ungdom og for alle barns rett til utdannelse"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/913",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"914",
+          "knownName":{
+            "en":"Malala Yousafzai"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their struggle against the suppression of children and young people and for the right of all children to education",
+            "no":"for deres kamp mot undertrykkelse av barn og ungdom og for alle barns rett til utdannelse"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/914",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2015",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2015-10-09",
+      "prizeAmount":8000000,
+      "prizeAmountAdjusted":8536613,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2015",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"925",
+          "orgName":{
+            "en":"National Dialogue Quartet ",
+            "no":"Kvartetten for nasjonal dialog"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for its decisive contribution to the building of a pluralistic democracy in Tunisia in the wake of the Jasmine Revolution of 2011",
+            "no":"for nasjonal dialog ble tildelt Nobels fredspris for dens avgjørende bidrag til byggingen av et pluralistisk demokrati i Tunisia i kjølvannet av jasminrevolusjonen i 2011"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/925",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2016",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2016-10-07",
+      "prizeAmount":8000000,
+      "prizeAmountAdjusted":8451577,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2016",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"934",
+          "knownName":{
+            "en":"Juan Manuel Santos"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his resolute efforts to bring the country's more than 50-year-long civil war to an end",
+            "no":"for hans iherdige innsats for å bringe den mer enn 50 år lange borgerkrigen i landet til opphør"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/934",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2017",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2017-10-06",
+      "prizeAmount":9000000,
+      "prizeAmountAdjusted":9342577,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2017",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"948",
+          "orgName":{
+            "en":"International Campaign to Abolish Nuclear Weapons (ICAN)",
+            "no":"Den internasjonale kampanjen mot atomvåpen (ICAN)"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for its work to draw attention to the catastrophic humanitarian consequences of any use of nuclear weapons and for its ground-breaking efforts to achieve a treaty-based prohibition of such weapons",
+            "no":"for sitt arbeid med å påpeke de katastrofale humanitære konsekvensene av enhver bruk av atomvåpen og for sin banebrytende innsats for å få til et traktatfestet forbud mot slike våpen"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/948",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2018",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2018-10-05",
+      "prizeAmount":9000000,
+      "prizeAmountAdjusted":9163200,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2018",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"966",
+          "knownName":{
+            "en":"Denis Mukwege"
+          },
+          "portion":"1/2",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for their efforts to end the use of sexual violence as a weapon of war and armed conflict",
+            "no":"for deres kamp mot seksualisert vold brukt som våpen i krig og væpnede konflikter"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/966",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        },
+        {
+          "id":"967",
+          "knownName":{
+            "en":"Nadia Murad"
+          },
+          "portion":"1/2",
+          "sortOrder":"2",
+          "motivation":{
+            "en":"for their efforts to end the use of sexual violence as a weapon of war and armed conflict",
+            "no":"for deres kamp mot seksualisert vold brukt som våpen i krig og væpnede konflikter"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/967",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "awardYear":"2019",
+      "category":{
+        "en":"Peace",
+        "no":"Fred",
+        "se":"Fred"
+      },
+      "categoryFullName":{
+        "en":"The Nobel Peace Prize",
+        "no":"Nobels fredspris",
+        "se":"Nobels fredspris"
+      },
+      "dateAwarded":"2019-10-11",
+      "prizeAmount":9000000,
+      "prizeAmountAdjusted":9000000,
+      "links":[
+        {
+          "rel":"nobelPrize",
+          "href":"https://api.nobelprize.org/2/nobelPrize/pea/2019",
+          "action":"GET",
+          "types":"application/json"
+        }
+      ],
+      "laureates":[
+        {
+          "id":"981",
+          "knownName":{
+            "en":"Abiy Ahmed Ali"
+          },
+          "portion":"1",
+          "sortOrder":"1",
+          "motivation":{
+            "en":"for his efforts to achieve peace and international cooperation, and in particular for his decisive initiative to resolve the border conflict with neighbouring Eritrea",
+            "no":"for hans innsats for fred og mellomstatlig samarbeid, og da særlig for hans avgjørande initiativ for å løsa grensekonflikten med nabolandet Eritrea"
+          },
+          "links":[
+            {
+              "rel":"laureate",
+              "href":"https://api.nobelprize.org/2/laureate/981",
+              "action":"GET",
+              "types":"application/json"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "meta":{
+    "offset":0,
+    "limit":20,
+    "nobelPrizeYear":2000,
+    "yearTo":2020,
+    "nobelPrizeCategory":"pea",
+    "count":21,
+    "terms":"https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/",
+    "license":"https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/#licence",
+    "disclaimer":"https://www.nobelprize.org/about/terms-of-use-for-api-nobelprize-org-and-data-nobelprize-org/#disclaimer"
+  },
+  "links":{
+    "first":"https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=0&limit=20&nobelPrizeYear=2000&yearTo=2020&nobelPrizeCategory=pea",
+    "self":"https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=0&limit=20&nobelPrizeYear=2000&yearTo=2020&nobelPrizeCategory=pea",
+    "next":"https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=20&limit=20&nobelPrizeYear=2000&yearTo=2020&nobelPrizeCategory=pea",
+    "last":"https://masterdataapi.nobelprize.org/2.1/nobelPrizes?offset=20&limit=20&nobelPrizeYear=2000&yearTo=2020&nobelPrizeCategory=pea"
+  }
+}

@@ -21,7 +21,7 @@ type ItemLink = {
 
 //TODO fix model https://app.swaggerhub.com/apis/NobelMedia/NobelMasterData/2.1#/default/get_nobelPrizes
 type Laureate = {
-  id: int;
+  id: number;
   knownName?: Translation;
   orgName?: Translation;
   portion: string;
@@ -31,24 +31,24 @@ type Laureate = {
 };
 
 type NobelPrize = {
-  awardYear: int;
+  awardYear: number;
   category: Category;
   categoryFullName: Translation;
   dateAwarded: string;
-  prizeAmount: int;
-  prizeAmountAdjusted: int;
+  prizeAmount: number;
+  prizeAmountAdjusted: number;
   topMotivation: Translation;
   laureates: Laureate[];
 };
 
 type NobelPrizesMeta = {
-  offset: int;
-  limit: int;
-  minimum: int;
-  nobelPrizeYear: int;
-  yearTo: int;
+  offset: number;
+  limit: number;
+  minimum: number;
+  nobelPrizeYear: number;
+  yearTo: number;
   nobelPrizeCategory: Category;
-  count: int;
+  count: number;
 };
 
 type Links = {

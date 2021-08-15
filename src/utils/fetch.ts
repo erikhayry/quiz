@@ -2,7 +2,7 @@ const headers = {
   "Content-Type": "application/json",
 };
 
-export const fetchAsJSON = async (url: string): Promise<any> => {
+export const fetchAsJSON = async (url: string): Promise<any | undefined> => {
   try {
     const res = await fetch(url, {
       method: "GET",
