@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { fetchAsJSON } from "../utils/fetch";
 import { getWinners } from "../utils/api";
 
 function App() {
