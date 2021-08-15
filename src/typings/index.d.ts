@@ -1,4 +1,4 @@
 type Winner = {
-    name: string,
-    year: int
-}
+  name: string;
+  year: int;
+};

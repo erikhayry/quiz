@@ -1,12 +1,12 @@
 const headers = {
-  'Content-Type': 'application/json',
+  "Content-Type": "application/json",
 };
 
 export const fetchAsJSON = async (url: string): Promise<any> => {
   try {
     const res = await fetch(url, {
-      method: 'GET',
-      headers
+      method: "GET",
+      headers,
     });
     if (res.status !== 200) {
       console.error(`server responded with ${res.status} for ${url}`);
