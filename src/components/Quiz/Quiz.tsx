@@ -16,18 +16,28 @@ function Quiz() {
   }, []);
 
   return (
-    <ul>
+    <div>
       {questions.map(({ winner, alternatives }, index) => (
-        <li key={index}>
-          <h2>{winner}</h2>
-          <ul>
+        <fieldset key={index}>
+          <legend>{winner}</legend>
+          <div>
             {alternatives.map((alternative, index) => (
-              <li key={index}>{alternative}</li>
+              <div>
+                <input
+                  id={`${winner}-${alternative}`}
+                  type="radio"
+                  name={winner}
+                  value={alternative}
+                />
+                <label htmlFor={`${winner}-${alternative}`}>
+                  {alternative}
+                </label>
+              </div>
             ))}
-          </ul>
-        </li>
+          </div>
+        </fieldset>
       ))}
-    </ul>
+    </div>
   );
 }
 
