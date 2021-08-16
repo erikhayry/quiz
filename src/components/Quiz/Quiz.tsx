@@ -1,13 +1,9 @@
 import { useEffect, useReducer } from "react";
 import { getWinners } from "../../utils/api";
 import { ACTION_TYPE, reducer } from "./QuizReducer";
-import {
-  countNumberOfRightAnswers,
-  getQuestions,
-  getTotalString,
-  isQuizDone,
-} from "./QuizUtils";
+import { getQuestions, getTotalString, isQuizDone } from "./QuizUtils";
 import Question from "./Question";
+import styles from "./Quiz.module.css";
 
 function Quiz() {
   const [{ questions, answers }, dispatch] = useReducer(reducer, {
@@ -34,14 +30,15 @@ function Quiz() {
   }
 
   return (
-    <div>
+    <div className={styles.container}>
       <p>{getTotalString(answers, questions.length)}</p>
       {quizIsDone && <button onClick={handleReplay}>Spela igen</button>}
       {!quizIsDone && (
-        <>
-          {questions.map(({q name, year, alternatives }, index) => (
+        <div className={styles.questions}>
+          {questions.map(({ name, year, alternatives }, index) => (
             <Question
               key={index}
+              index={index}
               name={name}
               year={year}
               alternatives={alternatives}
@@ -49,7 +46,7 @@ function Quiz() {
               isAnswered={Boolean(answers[year])}
             />
           ))}
-        </>
+        </div>
       )}
     </div>
   );

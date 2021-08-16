@@ -1,1 +1,15 @@
 @import "normalize.css";
+@import "variables.css";
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding-top: calc(var(--spacing) + env(safe-area-inset-top, 0));
+  padding-right: calc(var(--spacing) + env(safe-area-inset-right, 0));
+  padding-bottom: calc(var(--spacing) + env(safe-area-inset-bottom, 0));
+  padding-left: calc(var(--spacing) + env(safe-area-inset-left, 0));
+}
