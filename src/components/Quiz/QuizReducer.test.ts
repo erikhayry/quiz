@@ -1,5 +1,6 @@
 import { ACTION_TYPE, reducer, State } from "./QuizReducer";
 import { getMockQuestions } from "../../test-data/mocks/question";
+import { mockAnswers } from "../../test-data/mocks/answer";
 
 const INITIAL_STATE: State = {
   questions: [],
@@ -38,5 +39,16 @@ describe("Quiz reducer", () => {
       year: 2020,
       answer: 2021,
     });
+  });
+
+  it("actions type: replay", () => {
+    const state = reducer(
+      { ...INITIAL_STATE, answers: mockAnswers },
+      {
+        type: ACTION_TYPE.Replay,
+      }
+    );
+
+    expect(state.answers).toEqual({});
   });
 });

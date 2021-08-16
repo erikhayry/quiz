@@ -7,6 +7,7 @@ import {
 import { getMockWinners } from "../../test-data/mocks/winner";
 import { QUIZ_LENGTH } from "../../utils/config";
 import { getMockQuestions, mockQuestion } from "../../test-data/mocks/question";
+import { mockAnswers } from "../../test-data/mocks/answer";
 
 describe("Quiz utils", () => {
   describe("getAnswerAlternatives", () => {
@@ -50,9 +51,7 @@ describe("Quiz utils", () => {
     });
 
     it("returns true when all questions are answered", () => {
-      expect(
-        isQuizDone([mockQuestion], { 2000: { answer: 2000, year: 2000 } })
-      ).toBeTruthy();
+      expect(isQuizDone([mockQuestion], mockAnswers)).toBeTruthy();
     });
   });
 });
