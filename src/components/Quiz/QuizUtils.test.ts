@@ -47,6 +47,10 @@ describe("Quiz utils", () => {
   });
 
   describe("isQuizDone", () => {
+    it("returns false when there is no questions", () => {
+      expect(isQuizDone([], {})).toBeFalsy();
+    });
+
     it("returns false when questions are unanswered", () => {
       expect(isQuizDone(getMockQuestions(), {})).toBeFalsy();
     });

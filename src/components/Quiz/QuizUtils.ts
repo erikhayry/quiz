@@ -40,7 +40,9 @@ export function countNumberOfRightAnswers(
 }
 
 export function isQuizDone(questions: Question[], answers: Answers): boolean {
-  return Object.keys(answers).length === questions.length;
+  return (
+    questions.length > 0 && Object.keys(answers).length === questions.length
+  );
 }
 
 export function getTotalString(

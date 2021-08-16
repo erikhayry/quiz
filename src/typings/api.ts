@@ -59,7 +59,7 @@ type Links = {
   last: string;
 };
 
-type ApiResponse = {
+export type ApiResponse = {
   nobelPrizes: NobelPrize[];
   meta: NobelPrizesMeta;
   links: Links;

@@ -1,16 +1,16 @@
 import { fetchAsJSON } from "./fetch";
 import { NOBLE_PRIZE_CATEGORY, TIME_PERIOD } from "./config";
-import { NobelPrize } from "../typings/api";
+import { ApiResponse, NobelPrize } from "../typings/api";
 
 const NOBEL_PRIZE_API_PATH = "https://api.nobelprize.org/2.1/nobelPrizes";
 
 async function getNobelPrizes(): Promise<NobelPrize[]> {
-  const res = await fetchAsJSON(
+  const res: ApiResponse | undefined = await fetchAsJSON(
     `${NOBEL_PRIZE_API_PATH}?nobelPrizeYear=${TIME_PERIOD.FROM}&yearTo=${TIME_PERIOD.TO}}&nobelPrizeCategory=${NOBLE_PRIZE_CATEGORY}`
   );
 
   if (res) {
-    return res.nobelPrizes as NobelPrize[];
+    return res.nobelPrizes;
   }
 
   return [];
