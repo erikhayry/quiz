@@ -1,5 +1,6 @@
 import { fetchAsJSON } from "./fetch";
 import { NOBLE_PRIZE_CATEGORY, TIME_PERIOD } from "./config";
+import { NobelPrize } from "../typings/api";
 
 const NOBEL_PRIZE_API_PATH = "https://api.nobelprize.org/2.1/nobelPrizes";
 

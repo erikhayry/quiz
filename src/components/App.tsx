@@ -1,27 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { getWinners } from "../utils/api";
+import React from "react";
+import Quiz from "./Quiz/Quiz";
 
 function App() {
-  const [winners, setWinners] = useState<Winner[]>([]);
-
-  useEffect(() => {
-    async function fetch() {
-      const winners = await getWinners();
-      setWinners(winners);
-    }
-
-    fetch();
-  }, []);
-
-  return (
-    <ul>
-      {winners.map(({ name, year }, index) => (
-        <li key={index}>
-          {name}:{year}
-        </li>
-      ))}
-    </ul>
-  );
+  return <Quiz />;
 }
 
 export default App;

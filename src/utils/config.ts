@@ -1,3 +1,5 @@
+import {Category} from "../typings/api";
+
 export const TIME_PERIOD = {
   FROM: 2000,
   TO: 2020,

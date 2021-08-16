@@ -1,4 +1,4 @@
-import { TIME_PERIOD } from "./config";
+import { TIME_PERIOD } from "../../utils/config";
 
 function getRandomInt(min: number, max: number) {
   min = Math.ceil(min);
@@ -18,4 +18,8 @@ export function getAnswerAlternatives(answer: number): number[] {
   }
 
   return alternatives;
+}
+
+export function getQuestions(winners: Winner[]): Question[] {
+  return [];
 }

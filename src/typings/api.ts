@@ -1,4 +1,4 @@
-enum Category {
+export enum Category {
   Chemistry = "che",
   Economy = "eco",
   Peace = "pea",
@@ -30,7 +30,7 @@ type Laureate = {
   links: ItemLink[];
 };
 
-type NobelPrize = {
+export type NobelPrize = {
   awardYear: number;
   category: Category;
   categoryFullName: Translation;
