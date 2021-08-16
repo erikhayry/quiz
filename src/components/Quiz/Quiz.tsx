@@ -39,7 +39,7 @@ function Quiz() {
       {quizIsDone && <button onClick={handleReplay}>Spela igen</button>}
       {!quizIsDone && (
         <>
-          {questions.map(({ name, year, alternatives }, index) => (
+          {questions.map(({q name, year, alternatives }, index) => (
             <Question
               key={index}
               name={name}

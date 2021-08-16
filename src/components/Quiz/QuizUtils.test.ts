@@ -57,6 +57,6 @@ describe("Quiz utils", () => {
   });
 
   describe("getTotalString", () => {
-    expect(getTotalString()).toEqual("");
+    expect(getTotalString(mockAnswers, 10)).toEqual("1/10");
   });
 });
