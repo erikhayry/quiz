@@ -42,3 +42,15 @@ export function countNumberOfRightAnswers(
 export function isQuizDone(questions: Question[], answers: Answers): boolean {
   return Object.keys(answers).length === questions.length;
 }
+
+export function getTotalString(
+  answers: Answers,
+  numberOfQuestions: number
+): string {
+  const numberOfRightAnswers = Object.values(answers).reduce(
+    countNumberOfRightAnswers,
+    0
+  );
+
+  return `${numberOfRightAnswers}/${numberOfQuestions}`;
+}

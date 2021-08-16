@@ -4,8 +4,10 @@ import { ACTION_TYPE, reducer } from "./QuizReducer";
 import {
   countNumberOfRightAnswers,
   getQuestions,
+  getTotalString,
   isQuizDone,
 } from "./QuizUtils";
+import Question from "./Question";
 
 function Quiz() {
   const [{ questions, answers }, dispatch] = useReducer(reducer, {
@@ -33,37 +35,21 @@ function Quiz() {
 
   return (
     <div>
-      <p>
-        {Object.values(answers).reduce(countNumberOfRightAnswers, 0)} /
-        {questions.length}
-      </p>
+      <p>{getTotalString(answers, questions.length)}</p>
       {quizIsDone && <button onClick={handleReplay}>Spela igen</button>}
       {!quizIsDone && (
-        <div>
+        <>
           {questions.map(({ name, year, alternatives }, index) => (
-            <fieldset key={index} disabled={Boolean(answers[year])}>
-              <legend>{name}</legend>
-              <>
-                {alternatives.map((alternative, index) => (
-                  <div key={index}>
-                    <input
-                      id={`${name}-${alternative}`}
-                      type="radio"
-                      name={name}
-                      value={alternative}
-                      onClick={() => {
-                        handleAnswer(year, alternative);
-                      }}
-                    />
-                    <label htmlFor={`${name}-${alternative}`}>
-                      {alternative}
-                    </label>
-                  </div>
-                ))}
-              </>
-            </fieldset>
+            <Question
+              key={index}
+              name={name}
+              year={year}
+              alternatives={alternatives}
+              onAnswer={handleAnswer}
+              isAnswered={Boolean(answers[year])}
+            />
           ))}
-        </div>
+        </>
       )}
     </div>
   );

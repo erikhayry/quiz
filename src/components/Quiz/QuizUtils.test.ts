@@ -2,12 +2,17 @@ import {
   countNumberOfRightAnswers,
   getAnswerAlternatives,
   getQuestions,
+  getTotalString,
   isQuizDone,
 } from "./QuizUtils";
 import { getMockWinners } from "../../test-data/mocks/winner";
 import { QUIZ_LENGTH } from "../../utils/config";
 import { getMockQuestions, mockQuestion } from "../../test-data/mocks/question";
-import { mockAnswers } from "../../test-data/mocks/answer";
+import {
+  mockAnswers,
+  mockCorrectAnswer,
+  mockWrongAnswer,
+} from "../../test-data/mocks/answer";
 
 describe("Quiz utils", () => {
   describe("getAnswerAlternatives", () => {
@@ -36,12 +41,8 @@ describe("Quiz utils", () => {
 
   describe("countNumberOfRightAnswers", () => {
     it("count number of correct answers", () => {
-      expect(
-        countNumberOfRightAnswers(5, { answer: 2020, year: 2020 })
-      ).toEqual(6);
-      expect(
-        countNumberOfRightAnswers(5, { answer: 2019, year: 2020 })
-      ).toEqual(5);
+      expect(countNumberOfRightAnswers(5, mockCorrectAnswer)).toEqual(6);
+      expect(countNumberOfRightAnswers(5, mockWrongAnswer)).toEqual(5);
     });
   });
 
@@ -53,5 +54,9 @@ describe("Quiz utils", () => {
     it("returns true when all questions are answered", () => {
       expect(isQuizDone([mockQuestion], mockAnswers)).toBeTruthy();
     });
+  });
+
+  describe("getTotalString", () => {
+    expect(getTotalString()).toEqual("");
   });
 });
