@@ -17,8 +17,15 @@ function Quiz() {
 
   return (
     <ul>
-      {questions.map((q, index) => (
-        <li key={index}>{q}</li>
+      {questions.map(({ winner, alternatives }, index) => (
+        <li key={index}>
+          <h2>{winner}</h2>
+          <ul>
+            {alternatives.map((alternative, index) => (
+              <li key={index}>{alternative}</li>
+            ))}
+          </ul>
+        </li>
       ))}
     </ul>
   );

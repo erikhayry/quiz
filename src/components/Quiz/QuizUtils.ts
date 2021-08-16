@@ -21,5 +21,9 @@ export function getAnswerAlternatives(answer: number): number[] {
 }
 
 export function getQuestions(winners: Winner[]): Question[] {
-  return [];
+  return winners.map(({ name, year }) => ({
+    winner: name,
+    alternatives: getAnswerAlternatives(year),
+    answer: year,
+  }));
 }

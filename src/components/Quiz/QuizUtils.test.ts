@@ -1,4 +1,5 @@
 import { getAnswerAlternatives, getQuestions } from "./QuizUtils";
+import { getMockWinners } from "../../test/mocks/winner";
 
 describe("quiz", () => {
   describe("getAnswerAlternatives", () => {
@@ -12,11 +13,10 @@ describe("quiz", () => {
   });
 
   describe("getQuestions", () => {
-    const MOCK_WINNERS: Winner[] = [];
-    it("build questions form winners data", () => {
-      const questions = getQuestions(MOCK_WINNERS);
+    it("build questions form winners", () => {
+      const questions = getQuestions(getMockWinners());
 
-      expect(questions.length).toEqual(MOCK_WINNERS.length);
+      expect(questions.length).toMatchSnapshot();
     });
   });
 });

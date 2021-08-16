@@ -1,8 +1,10 @@
-import {Category} from "../typings/api";
+import { Category } from "../typings/api";
 
+export const QUIZ_LENGTH = 10;
+const FROM = 2009;
 export const TIME_PERIOD = {
-  FROM: 2000,
-  TO: 2020,
+  FROM,
+  TO: FROM + QUIZ_LENGTH,
 };
 
 export const NOBLE_PRIZE_CATEGORY: Category = Category.Peace;
