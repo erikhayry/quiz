@@ -4,83 +4,83 @@ exports[`api getWinners returns winners 1`] = `
 Array [
   Object {
     "name": "Kim Dae-jung",
-    "year": "2000",
+    "year": 2000,
   },
   Object {
     "name": "United Nations",
-    "year": "2001",
+    "year": 2001,
   },
   Object {
     "name": "Jimmy Carter",
-    "year": "2002",
+    "year": 2002,
   },
   Object {
     "name": "Shirin Ebadi",
-    "year": "2003",
+    "year": 2003,
   },
   Object {
     "name": "Wangari Maathai",
-    "year": "2004",
+    "year": 2004,
   },
   Object {
     "name": "International Atomic Energy Agency",
-    "year": "2005",
+    "year": 2005,
   },
   Object {
     "name": "Muhammad Yunus",
-    "year": "2006",
+    "year": 2006,
   },
   Object {
     "name": "Intergovernmental Panel on Climate Change",
-    "year": "2007",
+    "year": 2007,
   },
   Object {
     "name": "Martti Ahtisaari",
-    "year": "2008",
+    "year": 2008,
   },
   Object {
     "name": "Barack H. Obama",
-    "year": "2009",
+    "year": 2009,
   },
   Object {
     "name": "Liu Xiaobo",
-    "year": "2010",
+    "year": 2010,
   },
   Object {
     "name": "Ellen Johnson Sirleaf",
-    "year": "2011",
+    "year": 2011,
   },
   Object {
     "name": "European Union (EU)",
-    "year": "2012",
+    "year": 2012,
   },
   Object {
     "name": "Organisation for the Prohibition of Chemical Weapons",
-    "year": "2013",
+    "year": 2013,
   },
   Object {
     "name": "Kailash Satyarthi",
-    "year": "2014",
+    "year": 2014,
   },
   Object {
     "name": "National Dialogue Quartet ",
-    "year": "2015",
+    "year": 2015,
   },
   Object {
     "name": "Juan Manuel Santos",
-    "year": "2016",
+    "year": 2016,
   },
   Object {
     "name": "International Campaign to Abolish Nuclear Weapons (ICAN)",
-    "year": "2017",
+    "year": 2017,
   },
   Object {
     "name": "Denis Mukwege",
-    "year": "2018",
+    "year": 2018,
   },
   Object {
     "name": "Abiy Ahmed Ali",
-    "year": "2019",
+    "year": 2019,
   },
 ]
 `;

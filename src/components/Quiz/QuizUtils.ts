@@ -7,11 +7,12 @@ function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-export function getAnswerAlternatives(answer: number): number[] {
-  const alternatives = [answer];
+export function getAnswerAlternatives(year: number): number[] {
+  const alternatives = [year];
 
   while (alternatives.length !== 3) {
     const randomInt = getRandomInt(TIME_PERIOD.FROM, TIME_PERIOD.TO);
+
     if (!alternatives.includes(randomInt)) {
       alternatives.push(randomInt);
     }
@@ -22,8 +23,17 @@ export function getAnswerAlternatives(answer: number): number[] {
 
 export function getQuestions(winners: Winner[]): Question[] {
   return winners.map(({ name, year }) => ({
-    winner: name,
+    name,
+    year,
     alternatives: getAnswerAlternatives(year),
-    answer: year,
   }));
+}
+
+export function countNumberOfRightAnswers(
+  numberOfRightAnswers: number,
+  { answer, year }: Answer
+): number {
+  const acc = answer === year ? 1 : 0;
+
+  return numberOfRightAnswers + acc;
 }

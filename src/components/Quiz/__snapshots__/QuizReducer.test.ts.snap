@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quiz reducer actions type: fetched 1`] = `
+Object {
+  "answers": Object {},
+  "questions": Array [
+    Object {
+      "alternatives": Array [
+        2000,
+        2001,
+        2002,
+      ],
+      "name": "Mock Winner 0",
+      "year": 2000,
+    },
+    Object {
+      "alternatives": Array [
+        2001,
+        2002,
+        2003,
+      ],
+      "name": "Mock Winner 1",
+      "year": 2001,
+    },
+    Object {
+      "alternatives": Array [
+        2002,
+        2003,
+        2004,
+      ],
+      "name": "Mock Winner 2",
+      "year": 2002,
+    },
+    Object {
+      "alternatives": Array [
+        2003,
+        2004,
+        2005,
+      ],
+      "name": "Mock Winner 3",
+      "year": 2003,
+    },
+    Object {
+      "alternatives": Array [
+        2004,
+        2005,
+        2006,
+      ],
+      "name": "Mock Winner 4",
+      "year": 2004,
+    },
+    Object {
+      "alternatives": Array [
+        2005,
+        2006,
+        2007,
+      ],
+      "name": "Mock Winner 5",
+      "year": 2005,
+    },
+    Object {
+      "alternatives": Array [
+        2006,
+        2007,
+        2008,
+      ],
+      "name": "Mock Winner 6",
+      "year": 2006,
+    },
+    Object {
+      "alternatives": Array [
+        2007,
+        2008,
+        2009,
+      ],
+      "name": "Mock Winner 7",
+      "year": 2007,
+    },
+    Object {
+      "alternatives": Array [
+        2008,
+        2009,
+        2010,
+      ],
+      "name": "Mock Winner 8",
+      "year": 2008,
+    },
+    Object {
+      "alternatives": Array [
+        2009,
+        2010,
+        2011,
+      ],
+      "name": "Mock Winner 9",
+      "year": 2009,
+    },
+  ],
+}
+`;

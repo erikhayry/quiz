@@ -2,7 +2,7 @@ export enum Category {
   Chemistry = "che",
   Economy = "eco",
   Peace = "pea",
-  Phy = "phy",
+  Physics = "phy",
   Medicine = "med",
 }
 
@@ -21,7 +21,7 @@ type ItemLink = {
 
 //TODO fix model https://app.swaggerhub.com/apis/NobelMedia/NobelMasterData/2.1#/default/get_nobelPrizes
 type Laureate = {
-  id: number;
+  id: string;
   knownName?: Translation;
   orgName?: Translation;
   portion: string;
@@ -31,24 +31,24 @@ type Laureate = {
 };
 
 export type NobelPrize = {
-  awardYear: number;
+  awardYear: string;
   category: Category;
   categoryFullName: Translation;
   dateAwarded: string;
-  prizeAmount: number;
-  prizeAmountAdjusted: number;
+  prizeAmount: string;
+  prizeAmountAdjusted: string;
   topMotivation: Translation;
   laureates: Laureate[];
 };
 
 type NobelPrizesMeta = {
-  offset: number;
-  limit: number;
-  minimum: number;
-  nobelPrizeYear: number;
-  yearTo: number;
+  offset: string;
+  limit: string;
+  minimum: string;
+  nobelPrizeYear: string;
+  yearTo: string;
   nobelPrizeCategory: Category;
-  count: number;
+  count: string;
 };
 
 type Links = {

@@ -1,10 +1,13 @@
 import { useEffect, useReducer } from "react";
 import { getWinners } from "../../utils/api";
 import { ACTION_TYPE, reducer } from "./QuizReducer";
-import { getQuestions } from "./QuizUtils";
+import { countNumberOfRightAnswers, getQuestions } from "./QuizUtils";
 
 function Quiz() {
-  const [{ questions }, dispatch] = useReducer(reducer, { questions: [] });
+  const [{ questions, answers }, dispatch] = useReducer(reducer, {
+    questions: [],
+    answers: {},
+  });
 
   useEffect(() => {
     async function fetch() {
@@ -15,26 +18,35 @@ function Quiz() {
     fetch();
   }, []);
 
+  function handleAnswer(year: number, answer: number) {
+    dispatch({ type: ACTION_TYPE.Answer, year, answer });
+  }
+
   return (
     <div>
-      {questions.map(({ winner, alternatives }, index) => (
+      <p>
+        {Object.values(answers).reduce(countNumberOfRightAnswers, 0)} /
+        {questions.length}
+      </p>
+      {questions.map(({ name, year, alternatives }, index) => (
         <fieldset key={index}>
-          <legend>{winner}</legend>
-          <div>
+          <legend>{name}</legend>
+          <>
             {alternatives.map((alternative, index) => (
-              <div>
+              <div key={index}>
                 <input
-                  id={`${winner}-${alternative}`}
+                  id={`${name}-${alternative}`}
                   type="radio"
-                  name={winner}
+                  name={name}
                   value={alternative}
+                  onClick={() => {
+                    handleAnswer(year, alternative);
+                  }}
                 />
-                <label htmlFor={`${winner}-${alternative}`}>
-                  {alternative}
-                </label>
+                <label htmlFor={`${name}-${alternative}`}>{alternative}</label>
               </div>
             ))}
-          </div>
+          </>
         </fieldset>
       ))}
     </div>

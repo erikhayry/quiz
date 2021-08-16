@@ -4,7 +4,12 @@ type Winner = {
 };
 
 type Question = {
-  winner: string;
+  name: string;
   alternatives: number[];
+  year: number;
+};
+
+type Answer = {
+  year: number;
   answer: number;
 };

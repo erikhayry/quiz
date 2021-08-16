@@ -1,7 +1,12 @@
-import { getAnswerAlternatives, getQuestions } from "./QuizUtils";
-import { getMockWinners } from "../../test/mocks/winner";
+import {
+  countNumberOfRightAnswers,
+  getAnswerAlternatives,
+  getQuestions,
+} from "./QuizUtils";
+import { getMockWinners } from "../../test-data/mocks/winner";
+import { QUIZ_LENGTH } from "../../utils/config";
 
-describe("quiz", () => {
+describe("Quiz utils", () => {
   describe("getAnswerAlternatives", () => {
     it("returns alternatives", () => {
       const alternatives = getAnswerAlternatives(2010);
@@ -13,10 +18,27 @@ describe("quiz", () => {
   });
 
   describe("getQuestions", () => {
-    it("build questions form winners", () => {
+    it("build questions from winners", () => {
+      const winners = getMockWinners();
       const questions = getQuestions(getMockWinners());
 
-      expect(questions.length).toMatchSnapshot();
+      expect(questions.length).toEqual(QUIZ_LENGTH);
+      expect(questions[0].name).toEqual(winners[0].name);
+      expect(questions[0].year).toEqual(winners[0].year);
+      expect(
+        questions[0].alternatives.includes(questions[0].year)
+      ).toBeTruthy();
+    });
+  });
+
+  describe("countNumberOfRightAnswers", () => {
+    it("count number of correct answers", () => {
+      expect(
+        countNumberOfRightAnswers(5, { answer: 2020, year: 2020 })
+      ).toEqual(6);
+      expect(
+        countNumberOfRightAnswers(5, { answer: 2019, year: 2020 })
+      ).toEqual(5);
     });
   });
 });

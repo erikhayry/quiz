@@ -20,7 +20,7 @@ async function getNobelPrizes(): Promise<NobelPrize[]> {
 function mapToWinner({ awardYear, laureates }: NobelPrize): Winner {
   return {
     name: laureates[0].knownName?.en || laureates[0].orgName?.en || "UNKOWN",
-    year: awardYear,
+    year: Number.parseInt(awardYear),
   };
 }
 
