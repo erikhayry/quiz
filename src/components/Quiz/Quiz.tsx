@@ -35,11 +35,11 @@ function Quiz() {
   return (
     <div className={styles.container}>
       {quizIsDone && (
-        <>
+        <div className={styles.endScreen}>
           <h1>Klar!</h1>
           <p>Du fick {total} poäng</p>
           <button onClick={handleReplay}>Spela igen</button>
-        </>
+        </div>
       )}
       {!quizIsDone && (
         <>

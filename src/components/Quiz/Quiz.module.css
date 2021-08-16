@@ -14,5 +14,11 @@
   height: 100%;
   position: relative;
 }
-
+.endScreen{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
 .points{}
