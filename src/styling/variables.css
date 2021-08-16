@@ -1,3 +1,16 @@
 :root {
   --spacing: 16px;
+
+  --black: #222;
+  --white: #fff;
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 500;
+
+  --font-family: arial rounded mt, arial, helvetica, sans-serif;
+
+
+  --body-font-size: 15px;
+  --body-line-height: 20px;
+  --body-font-weight: var(--font-weight-regular);
 }

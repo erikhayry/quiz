@@ -1,9 +1,10 @@
-import { useEffect, useReducer } from "react";
+import { useEffect, useMemo, useReducer } from "react";
 import { getWinners } from "../../utils/api";
 import { ACTION_TYPE, reducer } from "./QuizReducer";
 import { getQuestions, getTotalString, isQuizDone } from "./QuizUtils";
 import Question from "./Question";
 import styles from "./Quiz.module.css";
+import { shuffleArray } from "../../utils";
 
 function Quiz() {
   const [{ questions, answers }, dispatch] = useReducer(reducer, {
@@ -11,6 +12,8 @@ function Quiz() {
     answers: {},
   });
   const quizIsDone = isQuizDone(questions, answers);
+  const total = getTotalString(answers, questions.length);
+  const shuffledQuestions = useMemo(() => shuffleArray(questions), [questions]);
 
   useEffect(() => {
     async function fetch() {
@@ -31,22 +34,31 @@ function Quiz() {
 
   return (
     <div className={styles.container}>
-      <p>{getTotalString(answers, questions.length)}</p>
-      {quizIsDone && <button onClick={handleReplay}>Spela igen</button>}
+      {quizIsDone && (
+        <>
+          <h1>Klar!</h1>
+          <p>Du fick {total} poäng</p>
+          <button onClick={handleReplay}>Spela igen</button>
+        </>
+      )}
       {!quizIsDone && (
-        <div className={styles.questions}>
-          {questions.map(({ name, year, alternatives }, index) => (
-            <Question
-              key={index}
-              index={index}
-              name={name}
-              year={year}
-              alternatives={alternatives}
-              onAnswer={handleAnswer}
-              isAnswered={Boolean(answers[year])}
-            />
-          ))}
-        </div>
+        <>
+          <h1>Vilket år vann personen / organisationen Nobels fredspris?</h1>
+          <div className={styles.questions}>
+            {shuffledQuestions.map(({ name, year, alternatives }, index) => (
+              <Question
+                key={index}
+                index={index}
+                name={name}
+                year={year}
+                alternatives={alternatives}
+                onAnswer={handleAnswer}
+                isAnswered={Boolean(answers[year])}
+              />
+            ))}
+          </div>
+          <p className={styles.points}>Poäng: {total}</p>
+        </>
       )}
     </div>
   );

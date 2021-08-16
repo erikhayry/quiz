@@ -30,11 +30,11 @@
 .alternative {
   width: 100%;
   text-align: center;
-  cursor: pointer;
 }
 
 .alternativeInner{
   display: block;
   padding: var(--spacing);
   background-color: #ddd;
+  cursor: pointer;
 }

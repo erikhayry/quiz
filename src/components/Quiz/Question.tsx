@@ -1,5 +1,8 @@
 import styles from "./Question.module.css";
 import classNames from "classnames";
+import { QUIZ_LENGTH } from "../../utils/config";
+import { shuffleArray } from "../../utils";
+import { useMemo } from "react";
 
 interface Props {
   index: number;
@@ -18,19 +21,28 @@ export function Question({
   isAnswered,
   onAnswer,
 }: Props) {
-  const questionId = `${name}-${index + 1}`;
+  const questionNr = index + 1;
+  const questionId = `${name}-${questionNr}`;
+  const shuffledAlternatives = useMemo(
+    () => shuffleArray(alternatives),
+    [alternatives]
+  );
 
   return (
     <div
       className={classNames(styles.container, {
         [styles.isAnswered]: isAnswered,
       })}
+      style={{
+        zIndex: QUIZ_LENGTH - index,
+      }}
       role="group"
       aria-labelledby={questionId}
     >
+      <div>{questionNr}</div>
       <p id={questionId}>{name}</p>
       <div className={styles.alternatives}>
-        {alternatives.map((alternative, index) => (
+        {shuffledAlternatives.map((alternative, index) => (
           <div key={index} className={styles.alternative}>
             <input
               disabled={isAnswered}
