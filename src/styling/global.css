@@ -18,4 +18,14 @@ body{
   padding-right: calc(var(--spacing) + env(safe-area-inset-right, 0));
   padding-bottom: calc(var(--spacing) + env(safe-area-inset-bottom, 0));
   padding-left: calc(var(--spacing) + env(safe-area-inset-left, 0));
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--font-weight-regular);
+}
+
+h1, h2, h3{
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--font-weight-semi-bold);
+  margin: 0;
 }

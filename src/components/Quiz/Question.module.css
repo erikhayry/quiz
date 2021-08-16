@@ -1,5 +1,9 @@
+:root{
+  --index-size: 40px;
+}
+
 .container {
-  border-radius: 10px;
+  border-radius: var(--radius);
   background-color: #ccc;
   position: absolute;
   width: 100%;
@@ -8,19 +12,37 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: var(--spacing);
+  padding: calc(var(--spacing) + calc(var(--index-size) / 2)) var(--spacing) var(--spacing);
 }
 
 .container.isAnswered {
   display: none;
 }
 
-.alternatives{
+.index{
+  position: absolute;
+  bottom: 100%;
+  width: var(--index-size);
+  height: var(--index-size);
+  border-radius: 50%;
+  left: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: var(--font-size-display);
+  background-color: var(--black);
+  color: var(--white);
+  transform: translate(-50%, 50%);
+}
+
+
+.alternatives{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
 }
 
 .input{
@@ -30,6 +52,17 @@
 .alternative {
   width: 100%;
   text-align: center;
+  overflow: hidden;
+}
+
+.alternative:first-child {
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.alternative:last-child {
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 .alternativeInner{
@@ -38,3 +71,5 @@
   background-color: #ddd;
   cursor: pointer;
 }
+
+

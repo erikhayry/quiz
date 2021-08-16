@@ -1,4 +1,5 @@
 import styles from "./Question.module.css";
+import a11y from "../../styling/a11y.module.css";
 import classNames from "classnames";
 import { QUIZ_LENGTH } from "../../utils/config";
 import { shuffleArray } from "../../utils";
@@ -39,8 +40,10 @@ export function Question({
       role="group"
       aria-labelledby={questionId}
     >
-      <div>{questionNr}</div>
-      <p id={questionId}>{name}</p>
+      <h2 className={styles.index}>
+        <span className={a11y.visuallyHidden}>Fråga nummer:</span> {questionNr}
+      </h2>
+      <h3 id={questionId}>{name}</h3>
       <div className={styles.alternatives}>
         {shuffledAlternatives.map((alternative, index) => (
           <div key={index} className={styles.alternative}>
