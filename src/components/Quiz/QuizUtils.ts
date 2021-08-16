@@ -1,4 +1,5 @@
 import { TIME_PERIOD } from "../../utils/config";
+import { Answers } from "./QuizReducer";
 
 function getRandomInt(min: number, max: number) {
   min = Math.ceil(min);
@@ -36,4 +37,8 @@ export function countNumberOfRightAnswers(
   const acc = answer === year ? 1 : 0;
 
   return numberOfRightAnswers + acc;
+}
+
+export function isQuizDone(questions: Question[], answers: Answers): boolean {
+  return Object.keys(answers).length === questions.length;
 }

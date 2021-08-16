@@ -2,9 +2,11 @@ import {
   countNumberOfRightAnswers,
   getAnswerAlternatives,
   getQuestions,
+  isQuizDone,
 } from "./QuizUtils";
 import { getMockWinners } from "../../test-data/mocks/winner";
 import { QUIZ_LENGTH } from "../../utils/config";
+import { getMockQuestions, mockQuestion } from "../../test-data/mocks/question";
 
 describe("Quiz utils", () => {
   describe("getAnswerAlternatives", () => {
@@ -39,6 +41,18 @@ describe("Quiz utils", () => {
       expect(
         countNumberOfRightAnswers(5, { answer: 2019, year: 2020 })
       ).toEqual(5);
+    });
+  });
+
+  describe("isQuizDone", () => {
+    it("returns false when questions are unanswered", () => {
+      expect(isQuizDone(getMockQuestions(), {})).toBeFalsy();
+    });
+
+    it("returns true when all questions are answered", () => {
+      expect(
+        isQuizDone([mockQuestion], { 2000: { answer: 2000, year: 2000 } })
+      ).toBeTruthy();
     });
   });
 });

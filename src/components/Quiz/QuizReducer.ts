@@ -7,9 +7,11 @@ type ACTION =
   | { type: ACTION_TYPE.Fetched; questions: Question[] }
   | { type: ACTION_TYPE.Answer; answer: number; year: number };
 
+export type Answers = Record<number, Answer>;
+
 export interface State {
   questions: Question[];
-  answers: Record<number, Answer>;
+  answers: Answers;
 }
 
 export function reducer(state: State, action: ACTION): State {

@@ -1,7 +1,11 @@
 import { useEffect, useReducer } from "react";
 import { getWinners } from "../../utils/api";
 import { ACTION_TYPE, reducer } from "./QuizReducer";
-import { countNumberOfRightAnswers, getQuestions } from "./QuizUtils";
+import {
+  countNumberOfRightAnswers,
+  getQuestions,
+  isQuizDone,
+} from "./QuizUtils";
 
 function Quiz() {
   const [{ questions, answers }, dispatch] = useReducer(reducer, {
@@ -28,27 +32,33 @@ function Quiz() {
         {Object.values(answers).reduce(countNumberOfRightAnswers, 0)} /
         {questions.length}
       </p>
-      {questions.map(({ name, year, alternatives }, index) => (
-        <fieldset key={index}>
-          <legend>{name}</legend>
-          <>
-            {alternatives.map((alternative, index) => (
-              <div key={index}>
-                <input
-                  id={`${name}-${alternative}`}
-                  type="radio"
-                  name={name}
-                  value={alternative}
-                  onClick={() => {
-                    handleAnswer(year, alternative);
-                  }}
-                />
-                <label htmlFor={`${name}-${alternative}`}>{alternative}</label>
-              </div>
-            ))}
-          </>
-        </fieldset>
-      ))}
+      {!isQuizDone(questions, answers) && (
+        <div>
+          {questions.map(({ name, year, alternatives }, index) => (
+            <fieldset key={index}>
+              <legend>{name}</legend>
+              <>
+                {alternatives.map((alternative, index) => (
+                  <div key={index}>
+                    <input
+                      id={`${name}-${alternative}`}
+                      type="radio"
+                      name={name}
+                      value={alternative}
+                      onClick={() => {
+                        handleAnswer(year, alternative);
+                      }}
+                    />
+                    <label htmlFor={`${name}-${alternative}`}>
+                      {alternative}
+                    </label>
+                  </div>
+                ))}
+              </>
+            </fieldset>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
