@@ -35,7 +35,7 @@ function Quiz() {
       {!isQuizDone(questions, answers) && (
         <div>
           {questions.map(({ name, year, alternatives }, index) => (
-            <fieldset key={index}>
+            <fieldset key={index} disabled={Boolean(answers[year])}>
               <legend>{name}</legend>
               <>
                 {alternatives.map((alternative, index) => (
