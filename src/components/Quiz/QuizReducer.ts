@@ -30,7 +30,7 @@ export function reducer(state: State, action: ACTION): State {
 
       answers[year] = {
         year,
-        answer,
+        suggestion: answer,
       };
 
       return { ...state, answers };

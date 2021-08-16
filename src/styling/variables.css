@@ -3,7 +3,11 @@
   --radius: 20px;
 
   --black: #222;
+  --green: #57b32c;
+  --red: #ff4b2b;
+  --light-black: #2f2f2f;
   --white: #fff;
+  --transparent-dark: rgba(0, 0, 0, 0.5);
 
   --font-weight-regular: 400;
   --font-weight-semi-bold: 500;
@@ -14,5 +18,9 @@
   --body-font-size: 15px;
   --body-line-height: 20px;
   --body-font-weight: var(--font-weight-regular);
+  --heading-font-size: 20px;
+  --heading-line-height: 30px;
+  --heading-font-weight: var(--font-weight-regular);
+
   --font-size-display: 24px;
 }

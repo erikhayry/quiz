@@ -11,5 +11,5 @@ type Question = {
 
 type Answer = {
   year: number;
-  answer: number;
+  suggestion: number;
 };

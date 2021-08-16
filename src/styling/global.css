@@ -13,6 +13,7 @@ body,
 }
 body{
   margin: 0;
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
   font-family: var(--font-family);
   padding-top: calc(var(--spacing) + env(safe-area-inset-top, 0));
   padding-right: calc(var(--spacing) + env(safe-area-inset-right, 0));
@@ -28,4 +29,13 @@ h1, h2, h3{
   line-height: var(--body-line-height);
   font-weight: var(--font-weight-semi-bold);
   margin: 0;
+}
+
+button {
+  border: none;
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
 }

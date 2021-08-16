@@ -1,11 +1,20 @@
 .container {
   position: relative;
   height: 100%;
+  max-height: 800px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
+
+.question{
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-height);
+  font-weight: var(--font-weight-semi-bold);}
 
 .questions{
   max-width: 300px;
@@ -14,11 +23,24 @@
   height: 100%;
   position: relative;
 }
+
 .endScreen{
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 100%;
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: var(--spacing);
 }
-.points{}
+
+.endScreenTitle{
+  font-size: var(--font-size-display);
+}
+
+.points{
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  font-size: var(--font-size-display);
+}

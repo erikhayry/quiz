@@ -4,13 +4,14 @@ import classNames from "classnames";
 import { QUIZ_LENGTH } from "../../utils/config";
 import { shuffleArray } from "../../utils";
 import { useMemo } from "react";
+import { isCorrectAnswer, isWrongAnswer } from "./QuestionUtils";
 
 interface Props {
   index: number;
   name: string;
   year: number;
   alternatives: number[];
-  isAnswered: boolean;
+  answer: Answer | undefined;
   onAnswer: (year: number, alternative: number) => void;
 }
 
@@ -19,7 +20,7 @@ export function Question({
   name,
   year,
   alternatives,
-  isAnswered,
+  answer,
   onAnswer,
 }: Props) {
   const questionNr = index + 1;
@@ -28,6 +29,7 @@ export function Question({
     () => shuffleArray(alternatives),
     [alternatives]
   );
+  const isAnswered = Boolean(answer);
 
   return (
     <div
@@ -43,7 +45,9 @@ export function Question({
       <h2 className={styles.index}>
         <span className={a11y.visuallyHidden}>Fråga nummer:</span> {questionNr}
       </h2>
-      <h3 id={questionId}>{name}</h3>
+      <h3 className={styles.name} id={questionId}>
+        {name}
+      </h3>
       <div className={styles.alternatives}>
         {shuffledAlternatives.map((alternative, index) => (
           <div key={index} className={styles.alternative}>
@@ -59,7 +63,11 @@ export function Question({
               }}
             />
             <label
-              className={styles.alternativeInner}
+              className={classNames(styles.alternativeInner, {
+                [styles.isCorrect]:
+                  answer && isCorrectAnswer(answer, alternative),
+                [styles.isWrong]: answer && isWrongAnswer(answer, alternative),
+              })}
               htmlFor={`${name}-${alternative}`}
             >
               {alternative}

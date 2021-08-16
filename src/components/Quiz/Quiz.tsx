@@ -36,14 +36,16 @@ function Quiz() {
     <div className={styles.container}>
       {quizIsDone && (
         <div className={styles.endScreen}>
-          <h1>Klar!</h1>
+          <h1 className={styles.endScreenTitle}>Klar!</h1>
           <p>Du fick {total} poäng</p>
           <button onClick={handleReplay}>Spela igen</button>
         </div>
       )}
       {!quizIsDone && (
         <>
-          <h1>Vilket år vann personen / organisationen Nobels fredspris?</h1>
+          <h1 className={styles.question}>
+            Vilket år vann personen / organisationen Nobels fredspris?
+          </h1>
           <div className={styles.questions}>
             {shuffledQuestions.map(({ name, year, alternatives }, index) => (
               <Question
@@ -53,7 +55,7 @@ function Quiz() {
                 year={year}
                 alternatives={alternatives}
                 onAnswer={handleAnswer}
-                isAnswered={Boolean(answers[year])}
+                answer={answers[year]}
               />
             ))}
           </div>

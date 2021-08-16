@@ -16,10 +16,10 @@ async function getNobelPrizes(): Promise<NobelPrize[]> {
   return [];
 }
 
-//TODO handle names
 function mapToWinner({ awardYear, laureates }: NobelPrize): Winner {
   return {
-    name: laureates[0].knownName?.en || laureates[0].orgName?.en || "UNKOWN",
+    // @ts-ignore
+    name: laureates[0].knownName?.en || laureates[0].orgName?.en, //laureates always has knownName or orgName
     year: Number.parseInt(awardYear),
   };
 }

@@ -32,9 +32,9 @@ export function getQuestions(winners: Winner[]): Question[] {
 
 export function countNumberOfRightAnswers(
   numberOfRightAnswers: number,
-  { answer, year }: Answer
+  { suggestion, year }: Answer
 ): number {
-  const acc = answer === year ? 1 : 0;
+  const acc = suggestion === year ? 1 : 0;
 
   return numberOfRightAnswers + acc;
 }
