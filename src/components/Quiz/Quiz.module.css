@@ -3,7 +3,6 @@
   height: 100%;
   max-height: 800px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
@@ -14,7 +13,9 @@
   padding: var(--spacing);
   font-size: var(--heading-font-size);
   line-height: var(--heading-line-height);
-  font-weight: var(--font-weight-semi-bold);}
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: var(--spacing);
+}
 
 .questions{
   max-width: 300px;
@@ -22,6 +23,8 @@
   width: 100%;
   height: 100%;
   position: relative;
+  flex-shrink: 0;
+  margin-bottom: var(--spacing);
 }
 
 .endScreen{

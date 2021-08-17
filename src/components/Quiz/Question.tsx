@@ -24,7 +24,9 @@ export function Question({
   onAnswer,
 }: Props) {
   const questionNr = index + 1;
-  const questionId = `${name}-${questionNr}`;
+  const questionId = `${name
+    .toLocaleLowerCase()
+    .replace(/\s/g, "")}-${questionNr}`;
   const shuffledAlternatives = useMemo(
     () => shuffleArray(alternatives),
     [alternatives]

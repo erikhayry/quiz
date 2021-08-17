@@ -43,7 +43,7 @@ function Quiz() {
       )}
       {!quizIsDone && (
         <>
-          <h1 className={styles.question}>
+          <h1 className={styles.question} tabIndex={0}>
             Vilket år vann personen / organisationen Nobels fredspris?
           </h1>
           <div className={styles.questions}>

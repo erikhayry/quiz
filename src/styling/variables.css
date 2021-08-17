@@ -15,12 +15,14 @@
   --font-family: arial rounded mt, arial, helvetica, sans-serif;
 
 
-  --body-font-size: 15px;
-  --body-line-height: 20px;
+  --body-font-size: 18px;
+  --body-line-height: 22px;
   --body-font-weight: var(--font-weight-regular);
   --heading-font-size: 20px;
-  --heading-line-height: 30px;
+  --heading-line-height: 25px;
   --heading-font-weight: var(--font-weight-regular);
 
   --font-size-display: 24px;
+
+  --z-index-above-all: 1000;
 }

@@ -14,6 +14,7 @@
   align-items: center;
   flex-direction: column;
   padding: calc(var(--spacing) + calc(var(--index-size) / 2)) var(--spacing) var(--spacing);
+  margin-top: calc(var(--index-size) / 2);
 }
 
 .container.isAnswered {
@@ -95,10 +96,10 @@
 @keyframes hide {
   0% {
     transform: translateX(0) rotate(0deg);
-    z-index: 11;
+    z-index: var(--z-index-above-all);
   }
   49% {
-    z-index: 11;
+    z-index: var(--z-index-above-all);
   }
   50% {
     transform: translateX(-50%) rotate(-2deg);

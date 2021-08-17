@@ -26,7 +26,7 @@ describe("Quiz reducer", () => {
 
     expect(state.answers[2020]).toEqual({
       year: 2020,
-      answer: 2020,
+      suggestion: 2020,
     });
 
     const updatedState = reducer(state, {
@@ -37,7 +37,7 @@ describe("Quiz reducer", () => {
 
     expect(updatedState.answers[2020]).toEqual({
       year: 2020,
-      answer: 2021,
+      suggestion: 2021,
     });
   });
 

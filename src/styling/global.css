@@ -32,6 +32,9 @@ h1, h2, h3{
 }
 
 button {
+  font-size: var(--body-font-size);
+  line-height: var(--body-line-height);
+  font-weight: var(--font-weight-semi-bold);
   border: none;
   border-radius: var(--radius);
   padding: var(--spacing);
